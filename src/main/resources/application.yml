@@ -1,0 +1,21 @@
+server:
+  port: 80
+
+spring:
+  mvc:
+    view:
+      prefix: "/templates/"
+      suffix: ".html"
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    platform: mysql
+    username: root
+    password: 123456
+    url: jdbc:mysql:///web_student?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  configuration:
+    #开启驼峰
+    map-underscore-to-camel-case: true

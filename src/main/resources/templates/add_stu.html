@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加</title>
+    <style>
+        .context {
+            width: 320px;
+            height: 320px;
+            margin: 150px auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #eee;
+            border-radius: 4px;
+        }
+
+        .context input:not([type=radio]) {
+            width: 100%;
+            height: 30px;
+            outline: none;
+            margin: 10px 0px;
+            border-radius: 4px;
+            border: 1px #efefef solid;
+        }
+
+        .context input[type=submit] {
+           height: 40px;
+            background-color: rgb(86,86,254);
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .context input[type=submit]:active {
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="context">
+    <h2>添加学生</h2>
+    <form action="addStu.do" method="post">
+        <input type="text" name="stno" placeholder="请输入学号"><br>
+        <input type="text" name="name" placeholder="请输入姓名"><br>
+        <input type="text" name="dept" placeholder="请输入所在系"><br>
+        <input type="text" name="course" placeholder="请输入专业"><br>
+       
+        <input type="submit" value="添 加 学 生">
+    </form>
+</div>
+</body>
+</html>
